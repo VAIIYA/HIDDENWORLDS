@@ -98,7 +98,7 @@ export class MenuScene extends Phaser.Scene {
 
     // Version
     this.add.text(w - 10, h - 10, 'v1.0', {
-      fontFamily: "'Nunito', sans-serif", fontSize: '12px', color: '#FF85A1', alpha: 0.5
+      fontFamily: "'Nunito', sans-serif", fontSize: '12px', color: '#FF85A1'
     }).setOrigin(1, 1).setAlpha(0.4)
   }
 

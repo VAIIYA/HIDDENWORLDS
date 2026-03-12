@@ -117,8 +117,8 @@ export class GameScene extends Phaser.Scene {
     for (let r = 0; r < 20; r++) {
       for (let c = 0; c < 30; c++) {
         this.add.text(c * 120 + 40, r * 100 + 40, items, {
-          fontSize: '40px', alpha: 0.08
-        })
+          fontSize: '40px'
+        }).setAlpha(0.08)
       }
     }
   }
@@ -468,7 +468,7 @@ export class GameScene extends Phaser.Scene {
     const w = this.scale.width, h = this.scale.height
     const t = this.add.text(w/2, h - 80, msg, {
       fontFamily: "'Nunito', sans-serif", fontSize: '18px', color: '#ffffff',
-      backgroundColor: '#FF85A1cc', padding: { x: 16, y: 8 }, borderRadius: 20,
+      backgroundColor: '#FF85A1cc', padding: { x: 16, y: 8 },
     }).setOrigin(0.5).setScrollFactor(0).setDepth(300)
     this.tweens.add({ targets: t, y: h - 120, alpha: 0, duration: 1500, delay: 1000, onComplete: () => t.destroy() })
   }
